@@ -15,7 +15,6 @@ public class MagazinService {
 
     List<String> tranzactie = new ArrayList<>();
 
-
     public void vinde(String produs) {
         if(produse.contains(produs)) {
             Integer nrVanzari = nrVanzariPerProdus.get(produs);
@@ -58,6 +57,6 @@ public class MagazinService {
             }
         }
 
-        System.out.println("Produsul " + produs + "suma: " + sumaVanzari);
+        System.out.println("Produsul " + produs + " suma: " + sumaVanzari);
     }
 }
