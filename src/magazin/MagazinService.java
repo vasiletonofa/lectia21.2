@@ -7,13 +7,13 @@ import java.util.*;
 
 public class MagazinService {
 
-    private Set<String> produse = new TreeSet<>();
+    private Set<String> produse = new TreeSet<>(); // produsele sunt unice
 
-    private Map<String, Integer> nrVanzariPerProdus = new TreeMap<>();
+    private Map<String, Integer> nrVanzariPerProdus = new TreeMap<>(); // Un singur produs, valoarea se modifica
 
-    private Map<String, Integer> preturi = new TreeMap<>();
+    private Map<String, Integer> preturi = new TreeMap<>(); // Un singur produs, valoarea se modifica
 
-    List<String> tranzactie = new ArrayList<>();
+    List<String> tranzactie = new ArrayList<>(); // Tranzactia nu este unica per produs
 
     public void vinde(String produs) {
         if(produse.contains(produs)) {
